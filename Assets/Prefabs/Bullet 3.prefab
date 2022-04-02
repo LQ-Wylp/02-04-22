@@ -112,4 +112,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dammage: 50
   Duration: 1
-  TauxScale: 25
+  TauxScale: 5
