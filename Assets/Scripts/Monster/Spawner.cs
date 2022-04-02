@@ -10,6 +10,16 @@ public class Spawner : MonoBehaviour
     public int NbSpawnByInterval;
     private float Timer;
 
+    public float TimeToMakeStronger = 5;
+    public float CoefAugmentation = 1.1f;
+    private float TimerStronger;
+    public int NbAugmentation = 0;
+
+    void Start()
+    {
+        Timer = IntervalSpawn;
+    }
+
     void Update()
     {
         Timer += Time.deltaTime;
@@ -17,6 +27,14 @@ public class Spawner : MonoBehaviour
         {
             Spawn();
             Timer = 0;
+        }
+
+        TimerStronger += Time.deltaTime;
+        if(TimerStronger > TimeToMakeStronger)
+        {
+            IntervalSpawn /= CoefAugmentation;
+            TimerStronger = 0;
+            NbAugmentation++;
         }
     }
 
@@ -33,7 +51,10 @@ public class Spawner : MonoBehaviour
             
             int randMonster = Random.Range(0, Monster.Count); 
             GameObject InstantiateThis = Monster[randMonster];
-            Instantiate(InstantiateThis, PosSpawn.position, Quaternion.identity);
+            GameObject LastInstance = Instantiate(InstantiateThis, PosSpawn.position, Quaternion.identity);
+            LastInstance.GetComponent<HpSystemMonster>().BonusDifficulter(NbAugmentation);
+
+
         }
 
     }

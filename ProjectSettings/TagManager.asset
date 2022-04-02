@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Exp
   - Ennemi
+  - Aimant
+  - Heal
   layers:
   - Default
   - TransparentFX
