@@ -28,4 +28,13 @@ public class HpSystemPlayer : MonoBehaviour
 
         _JaugeHP.value = HealthRemaning / MaxHealth;
     }
+
+    public void Heal(float value)
+    {
+        HealthRemaning += value;
+        if(HealthRemaning > MaxHealth)
+        {
+            HealthRemaning = MaxHealth;
+        }
+    }
 }
