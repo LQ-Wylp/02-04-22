@@ -24,9 +24,10 @@ public class ExpPlayer : MonoBehaviour
     }
     public void TakeExp(int exp)
     {
-        _ExpLevelCurrent += exp;
+        _ExpLevelCurrent += exp + exp * StatsSauvegarder.BonusExp;
         if(_ExpLevelCurrent >= _NbExpForLevelUp)
         {
+            GameOverScore.Level ++;
             _ExpLevelCurrent -= _NbExpForLevelUp;
             LevelUp();
 

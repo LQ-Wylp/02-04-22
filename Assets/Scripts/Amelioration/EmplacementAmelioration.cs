@@ -6,9 +6,8 @@ public class EmplacementAmelioration : MonoBehaviour
 {
     public List<GameObject> _MesAmeliorations;
 
-    public void ActivatedRandom()
+    public void Activated(int rand)
     {
-        int rand = Random.Range(0, _MesAmeliorations.Count);
         _MesAmeliorations[rand].SetActive(true);
     }
 
