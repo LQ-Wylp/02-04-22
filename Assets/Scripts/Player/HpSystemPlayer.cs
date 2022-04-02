@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HpSystemPlayer : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class HpSystemPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        MaxHealth += MaxHealth * StatsSauvegarder.HpPlayer;
         HealthRemaning = MaxHealth;
         _JaugeHP.value = HealthRemaning / MaxHealth;
     }
@@ -23,13 +25,13 @@ public class HpSystemPlayer : MonoBehaviour
         
         if(HealthRemaning <= 0)
         {
-            Debug.Log("T'es mort");
+            SceneManager.LoadScene("GameOver");
         }
 
         _JaugeHP.value = HealthRemaning / MaxHealth;
     }
 
-    public void Heal(float value)
+    public void HealPlayer(float value)
     {
         HealthRemaning += value;
         if(HealthRemaning > MaxHealth)

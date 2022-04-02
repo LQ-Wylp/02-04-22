@@ -21,7 +21,7 @@ public class HpSystemMonster : MonoBehaviour
 
     public void TakeDammage(float dommage)
     {
-        HealthRemaning -= dommage;
+        HealthRemaning -= dommage + dommage * StatsSauvegarder.DegatBonus;
         if(HealthRemaning <= 0)
         {
             Instantiate(Exp, transform.position, Quaternion.identity);
@@ -36,6 +36,7 @@ public class HpSystemMonster : MonoBehaviour
                 Instantiate(Heal, transform.position, Quaternion.identity);
             }
             ArgentDuCompte.Argents ++;
+            GameOverScore.EnnemiTue ++;
             Destroy(gameObject);
         }
     }
