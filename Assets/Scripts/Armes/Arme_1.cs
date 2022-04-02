@@ -77,6 +77,7 @@ public class Arme_1 : MonoBehaviour
         {
             GameObject LastBullet = Instantiate(Bullet, transform.position, Quaternion.identity);
             LastBullet.GetComponent<Bullet_1>().AtSpawn(Target);
+            LastBullet.gameObject.SetActive(true);
         }
     }
 

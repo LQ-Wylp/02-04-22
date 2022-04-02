@@ -21,5 +21,6 @@ public class Arme_3 : MonoBehaviour
     void Shot()
     {
         GameObject LastBullet = Instantiate(Bullet, transform.position, PlayerManager._playerManager.Player.transform.rotation);
+        LastBullet.gameObject.SetActive(true);
     }
 }
