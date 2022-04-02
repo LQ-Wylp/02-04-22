@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class ExpPlayer : MonoBehaviour
 {
@@ -9,6 +11,14 @@ public class ExpPlayer : MonoBehaviour
     public float _NbExpForLevelUp;
     public float _CoefExpByLevel;
 
+    public TextMeshProUGUI _LevelText;
+    public Slider _JaugeExp;
+
+    void Start()
+    {
+        _JaugeExp.value = _ExpLevelCurrent / _NbExpForLevelUp;
+        _LevelText.text = "Level : " + _Level;
+    }
     public void TakeExp(int exp)
     {
         _ExpLevelCurrent += exp;
@@ -19,11 +29,14 @@ public class ExpPlayer : MonoBehaviour
 
             _NbExpForLevelUp *= _CoefExpByLevel;
         }
+
+        _JaugeExp.value = _ExpLevelCurrent / _NbExpForLevelUp;
     }
 
     public void LevelUp()
     {
         _Level ++;
+        _LevelText.text = "Level : " + _Level;
 
     }
 }
