@@ -6167,7 +6167,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Monster:
   - {fileID: 2639006923150737915, guid: c313ae500eda2f944b96e59acb89f1dc, type: 3}
+  - {fileID: 1165553038698336837, guid: 9abef290d09174e468c6068a2d626abe, type: 3}
+  - {fileID: 8263424014999322052, guid: e2ce68e5e89bc7741be612c4a2de9838, type: 3}
   - {fileID: 2639006923150737915, guid: c313ae500eda2f944b96e59acb89f1dc, type: 3}
+  - {fileID: 2639006923150737915, guid: c313ae500eda2f944b96e59acb89f1dc, type: 3}
+  - {fileID: 2639006923150737915, guid: c313ae500eda2f944b96e59acb89f1dc, type: 3}
+  - {fileID: 2639006923150737915, guid: c313ae500eda2f944b96e59acb89f1dc, type: 3}
+  - {fileID: 2639006923150737915, guid: c313ae500eda2f944b96e59acb89f1dc, type: 3}
+  - {fileID: 2639006923150737915, guid: c313ae500eda2f944b96e59acb89f1dc, type: 3}
+  - {fileID: 2639006923150737915, guid: c313ae500eda2f944b96e59acb89f1dc, type: 3}
+  - {fileID: 2639006923150737915, guid: c313ae500eda2f944b96e59acb89f1dc, type: 3}
+  - {fileID: 2639006923150737915, guid: c313ae500eda2f944b96e59acb89f1dc, type: 3}
+  - {fileID: 2639006923150737915, guid: c313ae500eda2f944b96e59acb89f1dc, type: 3}
+  - {fileID: 2639006923150737915, guid: c313ae500eda2f944b96e59acb89f1dc, type: 3}
+  - {fileID: 2639006923150737915, guid: c313ae500eda2f944b96e59acb89f1dc, type: 3}
+  - {fileID: 2639006923150737915, guid: c313ae500eda2f944b96e59acb89f1dc, type: 3}
+  - {fileID: 2639006923150737915, guid: c313ae500eda2f944b96e59acb89f1dc, type: 3}
+  - {fileID: 2639006923150737915, guid: c313ae500eda2f944b96e59acb89f1dc, type: 3}
+  - {fileID: 2639006923150737915, guid: c313ae500eda2f944b96e59acb89f1dc, type: 3}
+  - {fileID: 8263424014999322052, guid: e2ce68e5e89bc7741be612c4a2de9838, type: 3}
   SpawnPosition:
   - {fileID: 1553179099}
   - {fileID: 1118091016}
