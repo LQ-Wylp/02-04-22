@@ -11,9 +11,12 @@ public class Arme_1 : MonoBehaviour
     public float FrequenceTir;
     private float Timer;
 
+    public cdSpell _cdSpell;
+
     void Update()
     {
         Timer += Time.deltaTime;
+        _cdSpell.RefreshVisuel(FrequenceTir , Timer);
         if(Timer > FrequenceTir)
         {
             Timer = 0;

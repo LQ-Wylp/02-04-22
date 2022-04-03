@@ -7,6 +7,7 @@ public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager _playerManager;
     public GameObject Player;
+    public Camera mainCamera;
     public Vector2 _MoveInput;
     public float _Accel;
 

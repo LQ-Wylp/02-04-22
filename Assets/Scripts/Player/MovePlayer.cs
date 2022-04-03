@@ -26,6 +26,7 @@ public class MovePlayer : MonoBehaviour
     private float _TimeAccel;
     private float _TimeCdAccel;
     private bool _AccelUsed;
+    public cdSpell _cdSpell;
 
     void Start()
     {
@@ -40,6 +41,8 @@ public class MovePlayer : MonoBehaviour
 
         if(_AccelUsed)
         {
+            _cdSpell.RefreshVisuel(1 , 1);
+
             if(_TimeAccel < _DurationAccel)
             {
                 _TimeAccel += Time.deltaTime;
@@ -53,6 +56,8 @@ public class MovePlayer : MonoBehaviour
         else
         {
             _TimeCdAccel += Time.deltaTime;
+
+            _cdSpell.RefreshVisuel(_CdAccel , _TimeCdAccel);
 
             if(PlayerManager._playerManager._Accel == 1 && _TimeCdAccel >= _CdAccel)
             {
