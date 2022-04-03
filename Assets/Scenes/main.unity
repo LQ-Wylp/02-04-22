@@ -1255,6 +1255,8 @@ MonoBehaviour:
   - {fileID: 548416629}
   - {fileID: 745525274}
   - {fileID: 1925874273}
+  - {fileID: 1582336711}
+  - {fileID: 1436117949}
 --- !u!1 &381828708
 GameObject:
   m_ObjectHideFlags: 0
@@ -5749,10 +5751,10 @@ MonoBehaviour:
   Arm3_Scale_Up: 5
   _Arme4: {fileID: 1966978024}
   _Bullet4: {fileID: 1787015456}
-  Arm4_Dommage_Initial: 40
+  Arm4_Dommage_Initial: 20
   Arm4_Dommage_Up: 5
-  Arm4_Frequence_Initial: 2.5
-  Arm4_Frequence_Up: 1.3
+  Arm4_Frequence_Initial: 3
+  Arm4_Frequence_Up: 1.2
 --- !u!4 &1107463201
 Transform:
   m_ObjectHideFlags: 0
@@ -5792,7 +5794,7 @@ MonoBehaviour:
   _Friction: 10
   _GravityPower: 1.5
   _CdAccel: 5
-  _DurationAccel: 3
+  _DurationAccel: 1.8
   _CoefSpeedAccel: 2
   _cdSpell: {fileID: 345938691}
 --- !u!114 &1107463203
@@ -5886,8 +5888,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Level: 0
-  _NbExpForLevelUp: 10
-  _CoefExpByLevel: 1.25
+  _NbExpForLevelUp: 20
+  _CoefExpByLevel: 1.15
   _LevelUp:
     m_PersistentCalls:
       m_Calls:
@@ -6229,10 +6231,10 @@ MonoBehaviour:
   - {fileID: 1538734021}
   IntervalSpawn: 10
   NbSpawnByInterval: 10
-  TimeToMakeStronger: 5
+  TimeToMakeStronger: 20
   CoefAugmentation: 1.1
   NbAugmentation: 0
-  LimiteDeMonstre: 50
+  LimiteDeMonstre: 70
   AllMonsters: []
 --- !u!1 &1176782582
 GameObject:
@@ -7059,6 +7061,8 @@ MonoBehaviour:
   - {fileID: 1563321691}
   - {fileID: 1247106129}
   - {fileID: 1349823189}
+  - {fileID: 787621668}
+  - {fileID: 86834054}
 --- !u!1 &1340943042
 GameObject:
   m_ObjectHideFlags: 0
@@ -10675,7 +10679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 809e1a976432e15419253cfba0d01bfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dammage: 15
+  Dammage: 10
   Duration: 0.5
 --- !u!1 &1821983221
 GameObject:
@@ -11608,7 +11612,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1966978022}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: 0}
+  m_LocalPosition: {x: 10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1294509492}
@@ -11628,7 +11632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 1787015451}
-  FrequenceTir: 2.5
+  FrequenceTir: 3
   _cdSpell: {fileID: 1557862241}
 --- !u!1 &1979069592
 GameObject:
@@ -12600,6 +12604,8 @@ MonoBehaviour:
   - {fileID: 1408595430}
   - {fileID: 1429215627}
   - {fileID: 1400669532}
+  - {fileID: 2136340608}
+  - {fileID: 2043457737}
 --- !u!1 &2088509580
 GameObject:
   m_ObjectHideFlags: 0

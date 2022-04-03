@@ -38,5 +38,6 @@ public class HpSystemPlayer : MonoBehaviour
         {
             HealthRemaning = MaxHealth;
         }
+        _JaugeHP.value = HealthRemaning / MaxHealth;
     }
 }
