@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Arme_2 : MonoBehaviour
+public class Arme_4 : MonoBehaviour
 {
     public GameObject Bullet;
     public float FrequenceTir;
@@ -23,8 +23,7 @@ public class Arme_2 : MonoBehaviour
 
     void Shot()
     {
-        GameObject LastBullet = Instantiate(Bullet, transform.position, PlayerManager._playerManager.Player.transform.rotation);
-        LastBullet.transform.parent = PlayerManager._playerManager.Player.transform;
+        GameObject LastBullet = Instantiate(Bullet, transform.position, Quaternion.identity);
         LastBullet.gameObject.SetActive(true);
     }
 }

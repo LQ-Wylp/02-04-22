@@ -59,7 +59,7 @@ public class AmeliorationManager : MonoBehaviour
     private int Arm1_Frequence_Nb_Upgrade = 0;
 
     public void Upgrade_Arm1_Dommage(){Arm1_Dommage_Nb_Upgrade ++; Arm1_Dommage = Arm1_Dommage_Initial + Arm1_Dommage_Up * Arm1_Dommage_Nb_Upgrade; _Bullet1.Dammage = Arm1_Dommage;}
-    public void Upgrade_Arm1_Frequence(){Arm1_Frequence_Nb_Upgrade ++; Arm1_Frequence = Arm1_Frequence_Initial / Arm1_Frequence_Up * Arm1_Frequence_Nb_Upgrade; _Arme1.FrequenceTir = Arm1_Frequence;}
+    public void Upgrade_Arm1_Frequence(){Arm1_Frequence_Nb_Upgrade ++; Arm1_Frequence = Arm1_Frequence_Initial / (Arm1_Frequence_Up * Arm1_Frequence_Nb_Upgrade); _Arme1.FrequenceTir = Arm1_Frequence;}
 
 
     [Header("Arme : 2")]
@@ -79,7 +79,7 @@ public class AmeliorationManager : MonoBehaviour
     private int Arm2_Frequence_Nb_Upgrade = 0;
 
     public void Upgrade_Arm2_Dommage(){Arm2_Dommage_Nb_Upgrade ++; Arm2_Dommage = Arm2_Dommage_Initial + Arm2_Dommage_Up * Arm2_Dommage_Nb_Upgrade; _Bullet2.Dammage = Arm2_Dommage;}
-    public void Upgrade_Arm2_Frequence(){Arm2_Frequence_Nb_Upgrade ++; Arm2_Frequence = Arm2_Frequence_Initial / Arm2_Frequence_Up * Arm2_Frequence_Nb_Upgrade; _Arme2.FrequenceTir = Arm2_Frequence;}
+    public void Upgrade_Arm2_Frequence(){Arm2_Frequence_Nb_Upgrade ++; Arm2_Frequence = Arm2_Frequence_Initial / (Arm2_Frequence_Up * Arm2_Frequence_Nb_Upgrade); _Arme2.FrequenceTir = Arm2_Frequence;}
 
 
     [Header("Arme : 3")]
@@ -103,6 +103,24 @@ public class AmeliorationManager : MonoBehaviour
     private int Arm3_Scale_Nb_Upgrade = 0;
 
     public void Upgrade_Arm3_Dommage(){Arm3_Dommage_Nb_Upgrade ++; Arm3_Dommage = Arm3_Dommage_Initial + Arm3_Dommage_Up * Arm3_Dommage_Nb_Upgrade; _Bullet3.Dammage = Arm3_Dommage;}
-    public void Upgrade_Arm3_Frequence(){Arm3_Frequence_Nb_Upgrade ++; Arm3_Frequence = Arm3_Frequence_Initial / Arm3_Frequence_Up * Arm3_Frequence_Nb_Upgrade; _Arme3.FrequenceTir = Arm3_Frequence;}
+    public void Upgrade_Arm3_Frequence(){Arm3_Frequence_Nb_Upgrade ++; Arm3_Frequence = Arm3_Frequence_Initial / (Arm3_Frequence_Up * Arm3_Frequence_Nb_Upgrade); _Arme3.FrequenceTir = Arm3_Frequence;}
     public void Upgrade_Arm3_Scale(){Arm3_Scale_Nb_Upgrade ++; Arm3_Scale = Arm3_Scale_Initial + Arm3_Scale_Up * Arm3_Scale_Nb_Upgrade; _Bullet3.TauxScale = Arm3_Scale;}
+
+    [Header("Arme : 3")]
+    public Arme_4 _Arme4;
+    public Bullet_4 _Bullet4;
+
+    private float Arm4_Dommage;
+    public float Arm4_Dommage_Initial = 40;
+    public float Arm4_Dommage_Up = 5f;
+    private int Arm4_Dommage_Nb_Upgrade = 0;
+    
+
+    private float Arm4_Frequence;
+    public float Arm4_Frequence_Initial = 2.5f;
+    public float Arm4_Frequence_Up = 1.3f;
+    private int Arm4_Frequence_Nb_Upgrade = 0;
+
+    public void Upgrade_Arm4_Dommage(){Arm4_Dommage_Nb_Upgrade ++; Arm4_Dommage = Arm4_Dommage_Initial + Arm4_Dommage_Up * Arm4_Dommage_Nb_Upgrade; _Bullet4.Dammage = Arm4_Dommage;}
+    public void Upgrade_Arm4_Frequence(){Arm4_Frequence_Nb_Upgrade ++; Arm4_Frequence = Arm4_Frequence_Initial / (Arm4_Frequence_Up * Arm4_Frequence_Nb_Upgrade); _Arme4.FrequenceTir = Arm4_Frequence;}
 }
