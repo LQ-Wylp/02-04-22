@@ -12,6 +12,7 @@ public class Arme_1 : MonoBehaviour
     private float Timer;
 
     public cdSpell _cdSpell;
+    public LookAtTarget _lookAtTarget;
 
     void Update()
     {
@@ -62,6 +63,10 @@ public class Arme_1 : MonoBehaviour
                 }
             }
             Target = newTarget;
+            if(Target != null)
+            {
+                _lookAtTarget.target = Target.transform;
+            }
         }
 
         for(int i = 0; i < EnnemiAtRange.Count; i++)
