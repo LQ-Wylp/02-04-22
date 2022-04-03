@@ -1,49 +1,9 @@
 fileFormatVersion: 2
-guid: d4115e1ec2299c846828d4c3f90ab998
+guid: 223faf03bf54f644fbc5fdbcac89e30e
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Arbre
-    second: {fileID: 2100000, guid: 033b55d5db5d464439127493f132811b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Arbre.001
-    second: {fileID: 2100000, guid: 73f0f006db32f084aa14cb2b2b014253, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Bleu
-    second: {fileID: 2100000, guid: 001c60ff552cd9e4dadfd4d59b6c9162, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Bois
-    second: {fileID: 2100000, guid: 656aa5d36327b444196c582143241e09, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Bordeau
-    second: {fileID: 2100000, guid: ce95afbc0dbd66d49aa3568a0e9000e7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Mur
-    second: {fileID: 2100000, guid: c5f26340f3ac7bb4cae7aa65c3659c61, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Rocher
-    second: {fileID: 2100000, guid: e2a46b3fd36e7564a8b59f31cee50cfc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sol
-    second: {fileID: 2100000, guid: 347c317715a370f49871aefccbcd0701, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
