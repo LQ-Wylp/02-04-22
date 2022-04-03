@@ -20,6 +20,7 @@ public class Bullet_2 : MonoBehaviour
     {
         if(other.tag == "Ennemi")
         {
+            
             other.gameObject.GetComponent<HpSystemMonster>().TakeDammage(Dammage);
         }
     }

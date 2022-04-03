@@ -28,6 +28,11 @@ public class MovePlayer : MonoBehaviour
     private bool _AccelUsed;
     public cdSpell _cdSpell;
 
+    public Rotate Roue1;
+    public Rotate Roue2;
+    public Rotate Roue3;
+    public Rotate Roue4;
+
     void Start()
     {
         _InitialAccel = _Acceleration;
@@ -75,6 +80,8 @@ public class MovePlayer : MonoBehaviour
         {
             Vector3 move = Vector3.zero;
 
+          
+
             if (_Move.y > 0)
             {
                 move += transform.forward * _Acceleration;
@@ -111,7 +118,21 @@ public class MovePlayer : MonoBehaviour
             }
             
         }
-
+    
+        if(_CharacterController.velocity.x == 0)
+        {
+            Roue1.enabled = false;
+            Roue2.enabled = false;
+            Roue3.enabled = false;
+            Roue4.enabled = false;
+        } 
+        else
+        {
+            Roue1.enabled = true;
+            Roue2.enabled = true;
+            Roue3.enabled = true;
+            Roue4.enabled = true;
+        }
         
     }
 }
