@@ -13,6 +13,11 @@ public class Arme_1 : MonoBehaviour
 
     public cdSpell _cdSpell;
     public LookAtTarget _lookAtTarget;
+<<<<<<< HEAD
+=======
+
+    public AudioSource AudioShot;
+>>>>>>> main
 
     void Update()
     {
@@ -83,6 +88,7 @@ public class Arme_1 : MonoBehaviour
         UpdateTarget();
         if(Target != null)
         {
+            AudioShot.Play();
             GameObject LastBullet = Instantiate(Bullet, transform.position, Quaternion.identity);
             LastBullet.GetComponent<Bullet_1>().AtSpawn(Target);
             LastBullet.gameObject.SetActive(true);
