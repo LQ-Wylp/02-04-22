@@ -11,8 +11,8 @@ public class UIGameOver : MonoBehaviour
 
     void Start()
     {
-        textTemps.text = "Temps : " + GameOverScore.Chronos.ToString("0.00") + "s";
-        textNbEnnemiTue.text = "Vous avez tué : " + GameOverScore.EnnemiTue + " ennemis";
-        textLevel.text = "Vous avez atteins le level : " + GameOverScore.Level;
+        textTemps.text = "" + GameOverScore.Chronos.ToString("0.00") + "s";
+        textNbEnnemiTue.text = "" + GameOverScore.EnnemiTue + " ennemis";
+        textLevel.text = "" + GameOverScore.Level;
     }
 }

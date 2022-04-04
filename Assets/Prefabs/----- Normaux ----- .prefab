@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 2639006923150737914}
   - component: {fileID: 2639006923150737909}
   - component: {fileID: 5742420908820437138}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: '----- Normaux ----- '
   m_TagString: Ennemi
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 2639006923380144814}
   - component: {fileID: 2639006923380144808}
   - component: {fileID: 2639006923380144809}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 2639006923515187937}
   - component: {fileID: 2639006923515187939}
   - component: {fileID: 2639006923515187936}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2639006923540564724}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Visuel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 2639006924484470623}
   - component: {fileID: 2639006924484470622}
   - component: {fileID: 2639006924484470617}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dommageable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -475,7 +475,7 @@ GameObject:
   - component: {fileID: 2639006925054010755}
   - component: {fileID: 2639006925054010813}
   - component: {fileID: 2639006925054010754}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -558,7 +558,7 @@ GameObject:
   - component: {fileID: 2185950954595077454}
   - component: {fileID: 3486103046992339281}
   - component: {fileID: 5329677199033938517}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dommage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -729,7 +729,7 @@ GameObject:
   - component: {fileID: 8284124908015156024}
   - component: {fileID: 1387624951384844427}
   - component: {fileID: 8178950447390166255}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -908,9 +908,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7640558969779515294, guid: a1555683f337c654c891a3f7484474fd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7146521406498821007, guid: a1555683f337c654c891a3f7484474fd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -6921351182912446855, guid: a1555683f337c654c891a3f7484474fd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -516098083770646512, guid: a1555683f337c654c891a3f7484474fd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a1555683f337c654c891a3f7484474fd, type: 3}
       propertyPath: m_Name
       value: Ennemi_monster_truck
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a1555683f337c654c891a3f7484474fd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416272007918961125, guid: a1555683f337c654c891a3f7484474fd, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1555683f337c654c891a3f7484474fd, type: 3}
