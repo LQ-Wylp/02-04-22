@@ -28,6 +28,19 @@ public class MovePlayer : MonoBehaviour
     private bool _AccelUsed;
     public cdSpell _cdSpell;
 
+    public Rotate Roue1;
+    public Rotate Roue2;
+    public Rotate Roue3;
+    public Rotate Roue4;
+
+    public ParticleSystem FireBoost;
+    public ParticleSystem FireBoost2;
+    public ParticleSystem FireBoost3;
+    public ParticleSystem FireBoost4;
+    public ParticleSystem FireBoost5;
+
+    public GameObject SpeedAudio;
+
     void Start()
     {
         _InitialAccel = _Acceleration;
@@ -41,6 +54,19 @@ public class MovePlayer : MonoBehaviour
 
         if(_AccelUsed)
         {
+            SpeedAudio.SetActive(true);
+           // FireBoost.Emit(50);
+            FireBoost.Play();
+            FireBoost2.Play();
+            FireBoost3.Play();
+            FireBoost4.Play();
+            FireBoost5.Play();
+
+            FireBoost.Emit(1);
+            FireBoost2.Emit(1);
+            FireBoost3.Emit(1);
+            FireBoost4.Emit(1);
+            FireBoost5.Emit(1);
             _cdSpell.RefreshVisuel(1 , 1);
 
             if(_TimeAccel < _DurationAccel)
@@ -49,7 +75,13 @@ public class MovePlayer : MonoBehaviour
             }
             else
             {
-               _AccelUsed = false; 
+                SpeedAudio.SetActive(false);
+                FireBoost.Stop();
+                FireBoost2.Stop();
+                FireBoost3.Stop();
+                FireBoost4.Stop();
+                FireBoost5.Stop();
+                _AccelUsed = false; 
                _Acceleration = _InitialAccel;
             }
         }
@@ -74,6 +106,8 @@ public class MovePlayer : MonoBehaviour
         if(_MoveActive)
         {
             Vector3 move = Vector3.zero;
+
+          
 
             if (_Move.y > 0)
             {
@@ -111,7 +145,21 @@ public class MovePlayer : MonoBehaviour
             }
             
         }
-
+    
+        if(_CharacterController.velocity.x == 0)
+        {
+            Roue1.enabled = false;
+            Roue2.enabled = false;
+            Roue3.enabled = false;
+            Roue4.enabled = false;
+        } 
+        else
+        {
+            Roue1.enabled = true;
+            Roue2.enabled = true;
+            Roue3.enabled = true;
+            Roue4.enabled = true;
+        }
         
     }
 }

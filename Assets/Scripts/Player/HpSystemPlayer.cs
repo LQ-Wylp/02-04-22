@@ -11,6 +11,10 @@ public class HpSystemPlayer : MonoBehaviour
 
     public Slider _JaugeHP;
 
+    public AudioSource AudioHeal;
+
+    public AudioSource DamageAudio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +25,7 @@ public class HpSystemPlayer : MonoBehaviour
 
     public void TakeDammage(float dommage)
     {
+        DamageAudio.Play();
         HealthRemaning -= dommage;
         
         if(HealthRemaning <= 0)
@@ -33,6 +38,7 @@ public class HpSystemPlayer : MonoBehaviour
 
     public void HealPlayer(float value)
     {
+        AudioHeal.Play();
         HealthRemaning += value;
         if(HealthRemaning > MaxHealth)
         {

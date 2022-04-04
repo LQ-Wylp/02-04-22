@@ -24,6 +24,7 @@ public class Arme_4 : MonoBehaviour
     void Shot()
     {
         GameObject LastBullet = Instantiate(Bullet, transform.position, Quaternion.identity);
+        LastBullet.transform.position = new Vector3(transform.position.x, 5.0f, transform.position.z);
         LastBullet.gameObject.SetActive(true);
     }
 }
