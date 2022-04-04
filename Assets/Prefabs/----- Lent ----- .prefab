@@ -655,7 +655,7 @@ MonoBehaviour:
   _MoveActive: 1
   _Move: {x: 0, y: 0}
   _RotateSpeed: 0
-  _Acceleration: 20
+  _Acceleration: 35
   _Friction: 10
   _GravityPower: 1.5
 --- !u!114 &8863770045508684588
