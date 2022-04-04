@@ -185,7 +185,7 @@ MonoBehaviour:
   _MoveActive: 1
   _Move: {x: 0, y: 0}
   _RotateSpeed: 0
-  _Acceleration: 20
+  _Acceleration: 30
   _Friction: 10
   _GravityPower: 1.5
 --- !u!114 &5742420908820437138
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 15
-  BonusHpByUpgradeDifficulte: 1
+  BonusHpByUpgradeDifficulte: 4
   Exp: {fileID: 4728488274150775374, guid: 676625397445cf74eaae279837075b38, type: 3}
   Aimant: {fileID: 1355546752129266836, guid: 243848bd6a698e04497124ef4ea9ab95, type: 3}
   Heal: {fileID: 4900203519897614972, guid: d912db24a2afdbd49abfde295efa1e02, type: 3}
@@ -557,6 +557,7 @@ GameObject:
   - component: {fileID: 2624117924492905199}
   - component: {fileID: 2185950954595077454}
   - component: {fileID: 3486103046992339281}
+  - component: {fileID: 5329677199033938517}
   m_Layer: 0
   m_Name: Dommage
   m_TagString: Untagged
@@ -573,14 +574,14 @@ RectTransform:
   m_GameObject: {fileID: 2705291619092257154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9283744, y: 0.9283744, z: 0.9283744}
   m_Children: []
   m_Father: {fileID: 313946799664423915}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 2.08}
+  m_AnchoredPosition: {x: 0, y: 3.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2185950954595077454
@@ -620,7 +621,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4288413688
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -680,6 +681,25 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!95 &5329677199033938517
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2705291619092257154}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5dde53637321a6b43bab2a29f13c5367, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &7128924963052790187
 MonoBehaviour:
   m_ObjectHideFlags: 0

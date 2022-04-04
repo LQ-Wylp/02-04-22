@@ -8,6 +8,7 @@ TagManager:
   - Ennemi
   - Aimant
   - Heal
+  - Ground
   layers:
   - Default
   - TransparentFX

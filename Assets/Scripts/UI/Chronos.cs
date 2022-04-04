@@ -10,7 +10,7 @@ public class Chronos : MonoBehaviour
     void Update()
     {
         Timer += Time.deltaTime;
-        TextChronos.text = "Temps : " + Timer.ToString("0.00") + "s";
+        TextChronos.text = ": " + Timer.ToString("0.00") + "s";
         GameOverScore.Chronos = Timer;
     }
 }

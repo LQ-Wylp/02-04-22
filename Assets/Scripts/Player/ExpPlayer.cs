@@ -17,6 +17,8 @@ public class ExpPlayer : MonoBehaviour
     public TextMeshProUGUI _LevelText;
     public Slider _JaugeExp;
 
+    public AudioSource Xpsound;
+
     void Start()
     {
         _JaugeExp.value = _ExpLevelCurrent / _NbExpForLevelUp;
@@ -24,6 +26,7 @@ public class ExpPlayer : MonoBehaviour
     }
     public void TakeExp(int exp)
     {
+        Xpsound.Play();
         _ExpLevelCurrent += exp + exp * StatsSauvegarder.BonusExp;
         if(_ExpLevelCurrent >= _NbExpForLevelUp)
         {

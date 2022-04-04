@@ -14,6 +14,8 @@ public class Arme_1 : MonoBehaviour
     public cdSpell _cdSpell;
     public LookAtTarget _lookAtTarget;
 
+    public AudioSource AudioShot;
+
     void Update()
     {
         Timer += Time.deltaTime;
@@ -83,6 +85,7 @@ public class Arme_1 : MonoBehaviour
         UpdateTarget();
         if(Target != null)
         {
+            AudioShot.Play();
             GameObject LastBullet = Instantiate(Bullet, transform.position, Quaternion.identity);
             LastBullet.GetComponent<Bullet_1>().AtSpawn(Target);
             LastBullet.gameObject.SetActive(true);
